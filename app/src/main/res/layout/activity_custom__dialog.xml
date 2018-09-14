@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_custom_dialog">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普通的对话框"
+        android:textSize="30dp"
+        android:textColor="@color/colorGreen"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普通对话框的内容"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#C0C0C0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textSize="20dp"
+            android:textColor="#87CEEB"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#C0C0C0"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:textSize="20dp"
+            android:textColor="#87CEEB"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
