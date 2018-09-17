@@ -9,15 +9,11 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
-import android.renderscript.ScriptGroup;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.MotionEvent;
-import android.view.SubMenu;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -28,7 +24,7 @@ import android.widget.RadioGroup;
 import android.widget.RemoteViews;
 import android.widget.Toast;
 
-public class informationActivity extends AppCompatActivity implements View.OnClickListener {
+public class InformationActivity extends AppCompatActivity implements View.OnClickListener {
     private ImageView imageView;
     private EditText username;
     private RadioGroup rgSex;
@@ -113,7 +109,7 @@ public class informationActivity extends AppCompatActivity implements View.OnCli
                 float y = event.getY();
 
                 String location = "触点作标：" + x + "," + y;
-                Toast.makeText(informationActivity.this, location,
+                Toast.makeText(InformationActivity.this, location,
                         Toast.LENGTH_SHORT).show();
         }
         return super.onTouchEvent(event);
@@ -133,7 +129,7 @@ public class informationActivity extends AppCompatActivity implements View.OnCli
             NotificationChannel channel = new NotificationChannel(id, "正常通知",
                     NotificationManager.IMPORTANCE_LOW);
             manager.createNotificationChannel(channel);
-            builder = new Notification.Builder(informationActivity.this, id);
+            builder = new Notification.Builder(InformationActivity.this, id);
             builder.setSmallIcon(R.mipmap.ic_launcher)
                     .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
                     .setContentTitle("普通通知")
@@ -141,7 +137,7 @@ public class informationActivity extends AppCompatActivity implements View.OnCli
                     .setContentIntent(pendingIntent)
                     .setAutoCancel(true);
         } else {
-            builder = new Notification.Builder(informationActivity.this);
+            builder = new Notification.Builder(InformationActivity.this);
             builder.setSmallIcon(R.mipmap.ic_launcher)
                     .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
                     .setContentTitle("普通通知")

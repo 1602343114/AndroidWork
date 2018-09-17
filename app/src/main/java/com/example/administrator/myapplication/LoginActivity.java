@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void login(String name, String pwd) {
         if("ni".equals(name)&&"123".equals(pwd)){
-            Intent intent = new Intent(LoginActivity.this, informationActivity.class);
+            Intent intent = new Intent(LoginActivity.this, InformationActivity.class);
             startActivity(intent);
         }else{
             Toast.makeText(this,"用户名或密码不正确",Toast.LENGTH_SHORT).show();

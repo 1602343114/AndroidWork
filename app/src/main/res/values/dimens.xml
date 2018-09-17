@@ -2,4 +2,5 @@
 <resources>
     <dimen name="activity_horzontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_size_16">16sp</dimen>
 </resources>
