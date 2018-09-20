@@ -8,4 +8,14 @@
     <color name="colorGreen">#7CFC00</color>
     <color name="colorYellow">#FFD700</color>
     <color name="colorGray">#694E42</color>
+
+    <color name="colorDigitalBtnNormal">#D0DCE3</color>
+    <color name="colorDigitalBtnPressed">#BED1DB</color>
+
+    <color name="colorSymbolLightBtnNormal">#BED1DB</color>
+    <color name="colorSymbolLightBtnPressed">#66A1B4</color>
+
+    <color name="colorSymbolDarkBtnNormal">#66A1B4</color>
+    <color name="colorSymbolDarkBtnPressed">#78CCE6</color>
+
 </resources>

@@ -7,25 +7,25 @@
     tools:context=".MainActivity"
     tools:ignore="OnClick">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="horizontal">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/colorPrimaryDark"-->
+        <!--android:orientation="horizontal">-->
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="70dp"
-            android:src="@mipmap/ic_launcher" />
+        <!--<ImageView-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:src="@mipmap/ic_launcher" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="计算器"
-            android:layout_gravity="center"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/activity_text_40" />
-    </LinearLayout>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="计算器"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="@dimen/activity_text_40" />-->
+    <!--</LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,9 +36,9 @@
         <TextView
             android:id="@+id/result"
             android:gravity="right|bottom"
-            android:textSize="@dimen/activity_text_40"
+            android:textSize="@dimen/activity_text_30"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/activity_size_70" />
+            android:layout_height="35dp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="5dp"
@@ -47,9 +47,9 @@
         <TextView
             android:id="@+id/fomula"
             android:gravity="right|bottom"
-            android:textSize="@dimen/activity_text_40"
+            android:textSize="@dimen/activity_text_30"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/activity_size_70" />
+            android:layout_height="35dp" />
     </LinearLayout>
 
     <LinearLayout

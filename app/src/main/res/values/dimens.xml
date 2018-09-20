@@ -3,4 +3,11 @@
     <dimen name="activity_horzontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="activity_size_16">16sp</dimen>
+    <dimen name="activity_size_25">25dp</dimen>
+    <dimen name="activity_size_30">30dp</dimen>
+    <dimen name="activity_text_30">30sp</dimen>
+    <dimen name="activity_text_40">40sp</dimen>
+    <dimen name="activity_size_50">50dp</dimen>
+    <dimen name="activity_size_70">70dp</dimen>
+
 </resources>
