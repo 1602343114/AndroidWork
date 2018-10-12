@@ -43,7 +43,7 @@ public class CalculatorActivity extends AppCompatActivity {
             case R.id.div:
                 Button btn = (Button) view;
                 text = btn.getText().toString();
-                tv_fomula.setText(tv_fomula.getText().toString()+text);
+                tv_fomula.setText(tv_fomula.getText().toString() + text);
                 break;
             case R.id.c:
                 tv_fomula.setText("");
@@ -51,7 +51,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 break;
             case R.id.delete:
                 text = tv_fomula.getText().toString();
-                if (text.length()>=1) {
+                if (text.length() >= 1) {
                     tv_fomula.setText(text.substring(0, text.length() - 1));
                 }
                 break;
@@ -59,7 +59,7 @@ public class CalculatorActivity extends AppCompatActivity {
                 String regex = "^(-)?\\d+(.\\d+)?[+\\-*/]\\d+(.d+)?";
 
                 text = tv_fomula.getText().toString();
-                if (!TextUtils.isEmpty(text)&& text.matches(regex)) {
+                if (!TextUtils.isEmpty(text) && text.matches(regex)) {
                     try {
                         Symbols symbol = new Symbols();
                         System.out.println(text);
@@ -75,5 +75,22 @@ public class CalculatorActivity extends AppCompatActivity {
                 text = "";
                 break;
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+
+        super.onSaveInstanceState(outState);
+        String fomula = tv_fomula.getText().toString();
+        String data = tv_result.getText().toString();
+
+        outState.putString("tv_fomula", fomula);
+        outState.putString("tv_result", data);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
     }
 }

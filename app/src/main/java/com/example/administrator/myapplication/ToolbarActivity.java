@@ -14,7 +14,7 @@ public class ToolbarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toolbar);
 
-        toolbar=findViewById(R.id.my_toolbar);
+        toolbar = findViewById(R.id.my_toolbar);
         //给toolbar加载菜单
         //setSupportActionBar(toolbar);//重写onC和onO
         toolbar.inflateMenu(R.menu.demo);//设置菜单选择的事件监听
@@ -24,9 +24,9 @@ public class ToolbarActivity extends AppCompatActivity {
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                switch (menuItem.getItemId()){
+                switch (menuItem.getItemId()) {
                     case R.id.menu_search:
-                        Snackbar.make(toolbar,"toolbar search",Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(toolbar, "toolbar search", Snackbar.LENGTH_LONG).show();
                         break;
                 }
                 return false;

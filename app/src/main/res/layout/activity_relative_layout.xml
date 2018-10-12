@@ -13,24 +13,28 @@
         android:layout_weight="1"
         android:background="@color/colorPrimaryDark"
         tools:ignore="Orientation">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
+
         <View
-            android:background="@color/colorWhite"
             android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            android:layout_height="1dp"
+            android:background="@color/colorWhite" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"

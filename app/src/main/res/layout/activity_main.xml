@@ -1,224 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="OnClick">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:text="@string/title"
-            android:textSize="30sp"
             android:textColor="@color/colorYellow"
-            android:padding="10dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <Button
-            android:id="@+id/bt_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="登录"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
-            android:textAllCaps="false"
-            />
-        <Button
-            android:id="@+id/bt_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="个人信息"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
-            android:textAllCaps="false"
-            />
+            android:textSize="30sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="登录"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+
+        <Button
+            android:id="@+id/bt_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="个人信息"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/bt_deliver1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="传递简单值1"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+
         <Button
             android:id="@+id/bt_deliver2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="传递简单值2"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/bt_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="传递数据"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+
         <Button
             android:id="@+id/bt_obj"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="传递对象"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+
         <Button
             android:id="@+id/bt_array"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="传递对象数组"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/bt_deliver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="传递并赋值"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/bt_call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="打电话"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+
         <Button
             android:id="@+id/bt_note"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="写短信"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+
         <Button
             android:id="@+id/bt_mail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="发送邮件"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+
         <Button
             android:id="@+id/bt_web"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="浏览网页"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
         <Button
-            android:id="@+id/bt_"
+            android:id="@+id/bt_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="启动时间"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+
         <Button
             android:id="@+id/bt_timer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="启动定时器"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
+
         <Button
             android:id="@+id/bt_clock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="启动闹钟"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/bt_acData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onClick"
             android:text="Activity数据传递"
-            android:textSize="@dimen/activity_size_16"
-            android:textColor="@color/colorGray"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/activity_size_16" />
     </LinearLayout>
 </LinearLayout>

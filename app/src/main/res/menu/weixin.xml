@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_info_maintain"
+        android:orderInCategory="1"
+        android:title="发起群聊"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_setting"
+        android:orderInCategory="1"
+        android:title="添加朋友"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_questionnaire"
+        android:orderInCategory="1"
+        android:title="扫一扫"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_about"
+        android:orderInCategory="1"
+        android:title="收付款"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/item_help"
+        android:orderInCategory="1"
+        android:title="帮助与反馈"
+        app:showAsAction="never"/>
+
+</menu>

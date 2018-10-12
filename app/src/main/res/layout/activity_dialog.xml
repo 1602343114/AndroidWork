@@ -4,96 +4,97 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="各种Dialog集合"
-            android:textSize="15dp"/>
+            android:textSize="15dp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/bt_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="普通Dialog"
-            android:textSize="20sp"
             android:textAllCaps="false"
-            />
+            android:textSize="20sp" />
+
         <Button
             android:id="@+id/an_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="多按钮Dialog"
-            android:textSize="20sp"
             android:textAllCaps="false"
-            />
+            android:textSize="20sp" />
+
         <Button
             android:id="@+id/lb_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="列表Dialog"
-            android:textSize="20sp"
             android:textAllCaps="false"
-            />
+            android:textSize="20sp" />
+
         <Button
             android:id="@+id/dan_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="单项选择Dialog"
-            android:textSize="20sp"
             android:textAllCaps="false"
-            />
+            android:textSize="20sp" />
+
         <Button
             android:id="@+id/duo_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="多项选择Dialog"
-            android:textSize="20sp"
             android:textAllCaps="false"
-            />
+            android:textSize="20sp" />
+
         <Button
             android:id="@+id/jdt_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="进度条Dialog"
-            android:textSize="20sp"
             android:textAllCaps="false"
-            />
+            android:textSize="20sp" />
+
         <Button
             android:id="@+id/dqz_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="读取中Dialog"
-            android:textSize="20sp"
             android:textAllCaps="false"
-            />
+            android:textSize="20sp" />
+
         <Button
             android:id="@+id/dy_dialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="自定义Dialog"
-            android:textSize="20sp"
             android:textAllCaps="false"
-            />
+            android:textSize="20sp" />
 
     </LinearLayout>
 

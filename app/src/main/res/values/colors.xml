@@ -7,8 +7,8 @@
     <color name="colorBlack">#000000</color>
     <color name="colorGreen">#7CFC00</color>
     <color name="colorYellow">#FFD700</color>
-    <color name="colorGray">#694E42</color>
-
+    <color name="colorBrown">#694E42</color>
+    <color name="colorGray">#AAAAAA</color>
     <color name="colorDigitalBtnNormal">#D0DCE3</color>
     <color name="colorDigitalBtnPressed">#BED1DB</color>
 
